@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:lift="http://liftweb.net/">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title class="lift:Menu.title">App: </title>
+    <script id="jquery" src="/classpath/jquery.js" type="text/javascript"></script>
+    <script src="/classpath/validate/jquery.validate.js" type="text/javascript"></script>
+    <script src="/classpath/validate/additional-methods.js" type="text/javascript"></script>
+    <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="Stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+	      <div class="container">
+			    <nav  role="navigation">
+			      <span data-lift="lift:Menu.builder?ul:class=nav%20navbar-nav;li_item:class=active;linkToSelf=true;group=top"></span>
+			    </nav>
+		    </div>
+	    </div>
+	  </header>
+    <div class="container">
+        <div class="col-md-10" id="content">The main content will get bound here</div>
+        <div class="col-md-2">
+          <div id="tips"></div>
+        </div>
+    </div>
+    <footer class="footer" role="contentinfo">
+       <div class="container">
+         <div class="row">
+            <div class="muted col-md-6">Demo application</div>
+         </div>
+       </div>
+    </footer>
+  </body>
+</html>
