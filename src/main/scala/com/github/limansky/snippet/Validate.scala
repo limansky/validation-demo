@@ -11,6 +11,6 @@ class Validate {
     var email = ""
 
     "#name" #> (SHtml.text(name, name = _) >> ValidateRequired(() => name)) &
-    "#email" #> SHtml.email(email, (s: String) => email = s)
+    "#email" #> (SHtml.email(email, (s: String) => email = s) >> ValidateEmail(() => email))
   }
 }
