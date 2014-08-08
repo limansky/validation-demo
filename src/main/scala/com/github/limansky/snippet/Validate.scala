@@ -9,8 +9,10 @@ class Validate {
   def render() = {
     var name = ""
     var email = ""
+    var agree = false
 
     "#name" #> (SHtml.text(name, name = _) >> ValidateRequired(() => name)) &
-    "#email" #> (SHtml.email(email, (s: String) => email = s) >> ValidateEmail(() => email))
+    "#email" #> (SHtml.email(email, (s: String) => email = s) >> ValidateEmail(() => email)) &
+    "#agree" #> (SHtml.checkbox(agree, agree = _) >> ValidateRequired(() => agree))
   }
 }
